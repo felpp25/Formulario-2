@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formalário 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="conteiner">
+      <h1>Banco de dados - cadastro de infromações</h1>
+      <form action="form1">
+        <div class="bd-cadastro">
+          <div class="input-grup-cadastro">
+            <label for="cliente-coding">Código do cliente: </label>
+            <input type="text" class="input-cliente" />
+          </div>
+
+          <div class="input-grup-cadastro">
+            <label for="valor"> Valor de compra em (em R$): </label>
+            <input
+              id="setQtdProduto"
+              class="input-cliente"
+              type="number"
+              value="1"
+              min="1"
+            />
+          </div>
+
+          <div class="equipType">
+            <div class="title2">Tipo de equipamento</div>
+            <div class="imp">
+              <input type="radio" />
+              <label for="imp">Impressora</label>
+            </div>
+
+            <div class="note">
+              <input type="radio" />
+              <label for="note">Notebook</label>
+            </div>
+
+            <div class="smart">
+              <input type="radio" />
+              <label for="smart">Smartphone</label>
+            </div>
+          </div>
+          <button class="button-51">Cadastrar compra</button>
+        </div>
+
+        <div class="bd-alteração">
+          <div class="input-grup-alteracao">
+            <label for="searchCliente">
+              Código do cliente para a pesquisa:</label
+            >
+            <input type="text" class="inputCodigo" />
+          </div>
+
+          <div class="input-grup-alteracao">
+            <label for="valor2">
+              Retificação do valor de compra em (R$):
+            </label>
+
+            <input
+              id="setQtdProduto"
+              class="inputCodigo"
+              type="number"
+              value="1"
+              min="1"
+            />
+          </div>
+
+          <button class="button-51">Alterar valor de compra</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
